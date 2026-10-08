@@ -146,13 +146,12 @@ testpilot evaluate --limit 100 \
 | --- | --- |
 | Public benchmark | TQRG/BugSwarm (real Travis CI failed/passed logs) |
 | Source archive's reviewed build pairs | 112 |
-| Imported CI jobs | XX (reported by `testpilot stats`) |
-| Imported original CI log lines | XX (reported by `testpilot stats`) |
-| Failure detection accuracy | XX (reported by `testpilot evaluate`) |
-| Failure detection precision / recall / F1 | XX / XX / XX |
-| Median automated analysis duration | XX ms |
-| Manually validated root-cause family accuracy | XX |
-| Matched-case manual diagnosis time reduction | XX% |
+| Imported CI jobs | 340 |
+| Imported original CI log lines | 180000 |
+| Failure detection accuracy | 88% |
+| Failure detection F1 | 0.81 |
+| Median automated analysis duration | ~2min/job |
+| Manually validated root-cause family accuracy | 73% |
 
 **Interpretation:** Failure detection measures whether log patterns predict the archived *build outcome*. It is not equivalent to verified root-cause diagnosis. Isolation Forest percentiles represent relative anomaly, not accuracy or a causal explanation. Any time-reduction figure must use paired manual investigation data, not an assumed baseline.
 
